@@ -40,7 +40,7 @@ st.subheader("FILTER YOUR MOVIE BY GENRE")
 
 df['genre_names'] = df['genre_names'].apply(ast.literal_eval)
 
-genre = ['Drama','Crime','History','Comedy','Romance','Animation','Family','Fantasy','Thriller','Adventure','Western','Action','War','Science Fiction','Music','Mystery','History','TV Movie']
+genre = ['Drama','Crime','History','Comedy','Romance','Animation','Family','Fantasy','Thriller','Adventure','Western','Action','War','Science Fiction','Music','Mystery','History']
 
 select_genre=st.multiselect("Genre",genre,genre)
 
