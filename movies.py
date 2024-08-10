@@ -44,7 +44,7 @@ genre = ['Drama','Crime','History','Comedy','Romance','Animation','Family','Fant
 
 select_genre=st.multiselect("Genre",genre,genre)
 
-filter_by_genre=df[df.genre_names.apply(lambda y: all(i in select_genre for i in y))]
+filter_by_genre=df[df.genre_names.apply(lambda y: any(i in select_genre for i in y))]
 
 st.write(filter_by_genre)
 
