@@ -54,7 +54,7 @@ st.write("***")
 
 st.subheader("ABOUT YOUR MOVIE")
 
-movie_name=st.text_area("Enter the movie name:",placeholder="Movie Name").lower()
+movie_name=st.text_area("Enter the movie name:",placeholder="Movie Name").lower().strip()
 
 movie_desc=df[df.original_title==movie_name]["overview"]
 movie_rating=df[df.original_title==movie_name]["rating"]
